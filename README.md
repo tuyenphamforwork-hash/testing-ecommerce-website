@@ -1,202 +1,239 @@
-# E-Commerce Website Testing Project
+# E-Commerce Website Source Code
 
 ## Introduction
 
-This is a **comprehensive testing project** on an open-source e-commerce website, designed to demonstrate thorough quality assurance practices. The project includes test planning, test case design, bug reporting, and automation testing. It covers key functionalities such as product search, category filtering, user authentication, shopping cart, and checkout process.
+This repository contains the source code of an open-source e-commerce website used for a software testing and quality assurance project. The system includes both customer-facing and administrator-facing features, allowing the testing team to perform comprehensive manual and automated testing activities using Katalon Studio.
 
-The underlying e-commerce platform is built using HTML, CSS, Bootstrap, JavaScript, PHP, and MySQL, providing both user-side and admin-side functionalities.
+The project is developed using PHP, MySQL, HTML, CSS, Bootstrap, and JavaScript, and serves as the main application under test for functional testing, UI testing, regression testing, and automation testing.
 
-## Language Composition
+---
 
-This repository consists of the following languages:
-- **PHP**: 64.6% - Server-side backend logic
-- **CSS**: 32.5% - Website styling and visual appearance
-- **JavaScript**: 1.9% - Client-side interactivity
-- **Hack**: 1% - Additional functionality
+## Project Purpose
+
+The purpose of this repository is to provide a fully functional e-commerce platform for:
+
+* Manual Testing
+* Automation Testing with Katalon Studio
+* Defect Reporting
+* Test Case Design
+* Regression Testing
+* UI/UX Evaluation
+* Academic Software Testing Projects
+
+---
 
 ## Technologies Used
 
-- **HTML**: Used for creating the structure and content of web pages.
-- **CSS**: Utilized for styling the website and enhancing its visual appearance.
-- **Bootstrap**: Used as a CSS framework to provide responsive design and pre-designed components.
-- **JavaScript**: Implemented for client-side interactivity and dynamic functionality.
-- **PHP**: Used as the server-side programming language to handle requests, process data, and interact with the database.
-- **MySQL**: Utilized as the database management system to store and retrieve data related to products, orders, and customers.
+* **PHP** — Backend server-side development
+* **MySQL** — Database management
+* **HTML5** — Page structure
+* **CSS3** — Styling and layout
+* **Bootstrap** — Responsive UI framework
+* **JavaScript** — Client-side interactions
 
-## User-Side Functionality
+---
 
-The user-side of the e-commerce website includes the following key features:
+## Main Features
 
-1. **Home Page**:
-   - Displays featured products, promotions, and categories.
-   - Includes a search bar to search for specific products.
-   - Provides navigation links to different product categories.
+### Customer-Side Features
 
-2. **Product Listing**:
-   - Displays a list of products with details such as name, price, and images.
-   - Enables users to filter and sort products based on different criteria.
-   - Allows users to view individual product details.
+* User registration and login
+* Product browsing
+* Product search
+* Product category filtering
+* Product detail pages
+* Shopping cart management
+* Checkout process
+* Order placement
+* User profile management
 
-3. **Shopping Cart**:
-   - Allows users to add products to the cart for purchase.
-   - Displays the selected products, quantities, and total price.
-   - Provides options to modify quantities, remove items, or proceed to checkout.
+### Admin-Side Features
 
-4. **User Authentication**:
-   - Enables users to register, log in, and log out.
-   - Stores user information securely and provides personalized experiences.
+* Admin authentication
+* Product management
+* Category management
+* Order management
+* Customer management
+* Inventory management
+* Dashboard overview
 
-5. **Checkout Process**:
-   - Collects user information (shipping address, payment details) for order processing.
+---
 
-## Admin-Side Functionality
+## Project Structure
 
-The admin-side of the e-commerce website includes the following key features:
+```text
+E-commerce/
+│
+├── admin/                 # Admin panel
+├── assets/                # CSS, JS, images
+├── database/              # SQL database files
+├── includes/              # Shared PHP components
+├── products/              # Product pages
+├── uploads/               # Uploaded images/files
+└── ...
+```
 
-1. **Product Management**:
-   - Enables administrators to add, edit, and delete products.
-   - Allows administrators to manage product categories, prices, and inventory.
+---
 
-2. **Order Management**:
-   - Provides an overview of incoming orders.
-   - Enables administrators to update order statuses (e.g., processing, shipped, delivered).
-   - Generates order invoices and packing slips.
+## Installation Guide
 
-3. **Customer Management**:
-   - Stores and manages customer information, including registration details and order history.
-   - Enables administrators to view and edit customer profiles.
+### Prerequisites
 
-4. **Inventory Management**:
-   - Tracks product stock levels and alerts administrators of low stock.
-   - Provides insights into product performance and sales statistics.
+Make sure the following software is installed:
 
-## Testing Scope
+* XAMPP / WAMP / Laragon
+* PHP 7.0+
+* MySQL / MariaDB
+* Web browser (Chrome recommended)
 
-This comprehensive testing project covers the following key areas:
+---
 
-- **Functional Testing**: Verification of all core features including product search, category filtering, user authentication, shopping cart management, and checkout process.
-- **Test Case Design**: Well-documented test cases for each functionality with expected results and test data.
-- **Bug Reporting**: Systematic documentation of any defects or issues found during testing.
-- **Automation Testing**: Automated test scripts to ensure consistent and repeatable testing.
-- **User Experience**: Testing UI/UX aspects and usability of the platform.
+## Setup Instructions
 
-## Conclusion
+### 1. Clone Repository
 
-This e-commerce website testing project provides a comprehensive set of features for both users and administrators. It demonstrates industry best practices in quality assurance and testing methodologies, ensuring the e-commerce platform is robust, reliable, and user-friendly.
+```bash
+git clone https://github.com/your-username/ecommerce-website-sourcecode.git
+```
 
-# E-commerce Website - Todo List
+Or download the repository as a ZIP file.
 
-## Payment Method
+---
 
-- [ ] Implement payment gateway integration (e.g., PayPal, Stripe) to allow customers to make secure online payments.
-- [ ] Set up server-side validation and processing of payment transactions.
-- [ ] Test the payment functionality thoroughly, including successful and failed payment scenarios.
-- [ ] Handle and display appropriate error messages for payment failures.
-- [ ] Ensure the security and encryption of sensitive payment information.
+### 2. Move Project to Web Server Directory
 
-## Code Cleanup
+Example for XAMPP:
 
-- [ ] Review the existing codebase for any unused or redundant code.
-- [ ] Remove commented-out code or debugging statements that are no longer needed.
-- [ ] Refactor code to follow best practices and coding standards.
-- [ ] Improve code readability by using meaningful variable and function names.
-- [ ] Identify and resolve any code duplication or performance bottlenecks.
+```text
+C:/xampp/htdocs/E-commerce
+```
 
-## Optimization
+---
 
-- [ ] Perform a thorough analysis of the website's performance using tools like Google PageSpeed Insights or Lighthouse.
-- [ ] Optimize images by compressing them or using modern image formats like WebP.
-- [ ] Minify CSS and JavaScript files to reduce their file sizes.
-- [ ] Implement caching mechanisms for static resources to improve loading times.
-- [ ] Evaluate and optimize database queries to improve overall site performance.
-- [ ] Consider implementing content delivery networks (CDNs) to distribute website assets and reduce server load.
+### 3. Create Database
 
-## Extra
+Open phpMyAdmin and create a database:
 
-- [ ] Implement social media sharing functionality to allow customers to share products or promotions.
-- [ ] Enhance the user interface by adding animations or transitions for a more engaging experience.
-- [ ] Add customer reviews and ratings feature to enable users to provide feedback on products.
-- [ ] Implement a wishlist or favorites functionality for users to save products for future reference.
-- [ ] Enhance search functionality by implementing filters, sorting options, or predictive search suggestions.
-- [ ] Integrate email notifications for order confirmations, shipment updates, and promotional campaigns.
+```text
+db_ecommerce
+```
 
-Feel free to prioritize and modify this todo list based on the specific requirements and priorities of your e-commerce website.
+---
 
-# E-commerce Website - Credit Section
+### 4. Import SQL File
 
-We would like to acknowledge the following repositories and their contributors for their valuable contributions to the development of our e-commerce website:
+Import the SQL file located in:
 
-## Front-end Template
+```text
+/database/db_ecommerce.sql
+```
 
-- Repository: [codewithsadee/anon-ecommerce-website](https://github.com/codewithsadee/anon-ecommerce-website)
-- Contributors:
-  - Sadee Samaraweera ([@codewithsadee](https://github.com/codewithsadee))
+---
 
-We utilized the front-end template from the above repository as the foundation for the user-side of our e-commerce website. This template provided a solid starting point with its well-structured HTML, CSS, and JavaScript components.
+### 5. Configure Database Connection
 
-## Admin Panel Template
+Update database configuration if needed:
 
-- Repository: [Bhabishya-123/E-commerce](https://github.com/Bhabishya-123/E-commerce)
-- Contributors:
-  - Bhabishya Sharma ([@Bhabishya-123](https://github.com/Bhabishya-123))
+```php
+localhost
+root
+password
+db_ecommerce
+```
 
-We utilized the admin panel template from the above repository to build the administrative interface of our e-commerce website. The provided template offered a user-friendly and intuitive design for managing products, orders, and customers.
+Configuration file example:
 
-We express our gratitude to the contributors of these repositories for their hard work, dedication, and open-source spirit, which greatly contributed to the development of our e-commerce website.
+```text
+/admin/includes/config.php
+```
 
-Please note that while we utilized these repositories as a starting point, we have made customizations, enhancements, and added our own code to tailor the website to our specific requirements and testing objectives.
+---
 
-# E-commerce Website - Installation Guide
+### 6. Run the Website
 
-This installation guide will help you set up and run the e-commerce website on your local development environment. The guide assumes you have basic knowledge of web development and have the necessary tools installed.
+Customer site:
 
-## Prerequisites
+```text
+http://localhost/E-commerce
+```
 
-Before proceeding with the installation, make sure you have the following software installed on your system:
+Admin panel:
 
-- Apache or Nginx web server
-- PHP 7.0 or later
-- MySQL database
-- Git (optional)
+```text
+http://localhost/E-commerce/admin
+```
 
-## Installation Steps
+---
 
-Follow these steps to install and run the e-commerce website:
+## Default Admin Account
 
-1. **Clone the Repository**:
-   - If you have Git installed, open a terminal and run the following command:
-     ```
-     git clone https://github.com/tuyenphamforwork-hash/testing-ecommerce-website.git
-     ```
-   - Alternatively, you can download the repository as a ZIP file.
-   - Extract the contents of the ZIP file to a directory of your choice.
+```text
+Username: admin
+Password: adminfahad
+```
 
-2. **Configure Database**:
-   - Create a new MySQL database for the e-commerce website.
-   - Import the provided SQL file (`database.sql`) into your newly created database. This file contains the necessary tables and sample data for the website.
+---
 
-3. **Update Configuration**:
-   - Open the `config.php` file located in the root directory.
-   - Update the database credentials (hostname, username, password, database name) to match your local setup.
-   - Save the changes.
+## Testing Repository
 
-4. **Start Web Server**:
-   - Start your Apache or Nginx web server and ensure it is running correctly.
+Automation testing scripts and Katalon project files are maintained separately in the testing repository:
 
-5. **Access the Website**:
-   - Open your web browser and navigate to the URL where the website is hosted (e.g., `http://localhost/testing-ecommerce-website`).
-   - You should now see the home page of the e-commerce website.
+```text
+ecommerce-website-testing
+```
 
-## Admin Panel
+This separation helps keep the application source code independent from automation scripts and test reports.
 
-To access the admin panel of the e-commerce website, follow these steps:
+---
 
-1. Open your web browser and navigate to the admin URL (e.g., `http://localhost/testing-ecommerce-website/admin`).
-2. Login using the default admin credentials:
-   - Username: `admin`
-   - Password: `adminfahad`
-3. Once logged in, you can manage products, orders, customers, and other administrative tasks from the admin panel.
+## Recommended Environment
 
-Congratulations! You have successfully installed and set up the e-commerce website on your local development environment. You can now customize the website, add your products, and explore its various features.
+To avoid compatibility issues during testing, team members should use:
 
-Please note that this installation guide assumes a basic local development environment. For deploying the website to a production server, additional configuration and security considerations may be necessary.
+* Same Katalon version
+* Same browser version
+* Same ChromeDriver version
+
+---
+
+## Known Limitations
+
+* Online payment gateway is not implemented
+* Email notification system is incomplete
+* Security hardening is limited
+* Input validation is partially implemented
+* Performance optimization is minimal
+
+---
+
+## Future Improvements
+
+* Payment gateway integration
+* Product review system
+* Wishlist feature
+* Advanced product filtering
+* Email notifications
+* Responsive UI improvements
+* Security enhancements
+
+---
+
+## Credits
+
+This project is based on and customized from the following open-source resources:
+
+### Front-end Template
+
+* Repository: `codewithsadee/anon-ecommerce-website`
+
+### Admin Panel Template
+
+* Repository: `Bhabishya-123/E-commerce`
+
+Additional modifications, integrations, and testing implementations were developed for educational and software testing purposes.
+
+---
+
+## License
+
+This project is intended for educational, learning, and software testing purposes only.
